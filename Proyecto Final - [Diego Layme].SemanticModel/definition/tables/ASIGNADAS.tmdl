@@ -110,7 +110,7 @@ table ASIGNADAS
 
 	column Latitud
 		dataType: double
-		lineageTag: 9f3b17dc-d4ad-4793-96e7-4d3d8200d258
+		lineageTag: 7bee836b-ab62-4c85-b335-4aa5bb4604c9
 		summarizeBy: sum
 		sourceColumn: Latitud
 
@@ -120,7 +120,7 @@ table ASIGNADAS
 
 	column Longitud
 		dataType: double
-		lineageTag: b5c2913e-ed0e-490e-8742-7fc2cbf6d2fd
+		lineageTag: 8b81d849-321a-4d6a-94cc-832432832871
 		summarizeBy: sum
 		sourceColumn: Longitud
 
@@ -163,12 +163,20 @@ table ASIGNADAS
 				    #"Valor reemplazado2" = Table.ReplaceValue(#"Personalizada agregada1","DEPOSITO TEMPORAL - TERMINAL Y ALMACENES SUR S.A.","TASSA",Replacer.ReplaceText,{"Punto de Llegada"}),
 				    #"Valor reemplazado3" = Table.ReplaceValue(#"Valor reemplazado2","DEPOSITO TEMPORAL - ANDESGATE SOCIEDAD ANONIMA","ANDESGATE",Replacer.ReplaceText,{"Punto de Llegada"}),
 				    #"Valor reemplazado4" = Table.ReplaceValue(#"Valor reemplazado3","DEPOSITO TEMPORAL - AGERSA S.R.L.","AGERSA",Replacer.ReplaceText,{"Punto de Llegada"}),
-				    #"Columna condicional agregada" = Table.AddColumn(#"Valor reemplazado4", "Personalizado", each if [Punto de Llegada] = "TASSA" then "-16.5781468,-69.0551832" else if [Punto de Llegada] = "AGERSA" then "-16.5750007,-69.0491047" else "-16.5803035,-69.0449514"),
+				    #"Columna condicional agregada" = Table.AddColumn(#"Valor reemplazado4", "Personalizado", each if [Punto de Llegada] = "TASSA" then "-16.5781468,-69.0551832" else if [Punto de Llegada] = "ANDESGATE" then "-16.5803035,-69.0449514" else if [Punto de Llegada] = "AGERSA" then "-16.5750007,-69.0491047" else "-16.5803035,-69.0449514"),
 				    #"Dividir columna por delimitador" = Table.SplitColumn(#"Columna condicional agregada", "Personalizado", Splitter.SplitTextByDelimiter(",", QuoteStyle.Csv), {"Personalizado.1", "Personalizado.2"}),
 				    #"Tipo cambiado7" = Table.TransformColumnTypes(#"Dividir columna por delimitador",{{"Personalizado.1", type number}, {"Personalizado.2", type number}}),
-				    #"Columnas con nombre cambiado3" = Table.RenameColumns(#"Tipo cambiado7",{{"Personalizado.1", "Latitud"}, {"Personalizado.2", "Longitud"}})
+				    #"Columnas con nombre cambiado3" = Table.RenameColumns(#"Tipo cambiado7",{{"Personalizado.1", "Latitud"}, {"Personalizado.2", "Longitud"}}),
+				    #"Personalizada agregada2" = Table.AddColumn(#"Columnas con nombre cambiado3", "Lat.", each if [Punto de Llegada] = "TASSA" then "-16.5781468" else if [Punto de Llegada] = "ANDESGATE" then "-16.5803035" else "-16.5750007"),
+				    #"Columnas con nombre cambiado4" = Table.RenameColumns(#"Personalizada agregada2",{{"Lat.", "Latitud 2"}}),
+				    #"Personalizada agregada4" = Table.AddColumn(#"Columnas con nombre cambiado4", "Personalizado", each if [Punto de Llegada] = "TASSA" then "-69.0551832" else if [Punto de Llegada] = "ANDESGATE" then "-69.0449514" else "-69.0491047"),
+				    #"Columnas quitadas2" = Table.RemoveColumns(#"Personalizada agregada4",{"Latitud"}),
+				    #"Columnas con nombre cambiado5" = Table.RenameColumns(#"Columnas quitadas2",{{"Latitud 2", "Latitud"}}),
+				    #"Columnas quitadas3" = Table.RemoveColumns(#"Columnas con nombre cambiado5",{"Longitud"}),
+				    #"Columnas con nombre cambiado6" = Table.RenameColumns(#"Columnas quitadas3",{{"Personalizado", "Longitud"}}),
+				    #"Tipo cambiado8" = Table.TransformColumnTypes(#"Columnas con nombre cambiado6",{{"Latitud", type number}, {"Longitud", type number}, {"Día de Asignación", type text}})
 				in
-				    #"Columnas con nombre cambiado3"
+				    #"Tipo cambiado8"
 
 	annotation PBI_NavigationStepName = Navegación
 

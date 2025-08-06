@@ -4045,50 +4045,6 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "asignada.latitud": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "ASIGNADAS",
-			          "ConceptualProperty": "Latitud"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "latitud": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "latitud": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "asignada.longitud": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "ASIGNADAS",
-			          "ConceptualProperty": "Longitud"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "longitud": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "longitud": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "partida": {
 			      "Definition": {
 			        "Binding": {
