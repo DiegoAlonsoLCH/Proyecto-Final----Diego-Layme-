@@ -17,6 +17,12 @@ cultureInfo es-ES
 			          "numerada": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "numerada": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -31,6 +37,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "n° dua": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n° dua": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -51,7 +63,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha numeración": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "date": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
@@ -72,6 +97,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jerarquía de fecha": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -95,7 +126,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración año": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -119,7 +162,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración trimestre": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -143,7 +198,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración me": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -167,7 +234,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración día": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -186,6 +265,12 @@ cultureInfo es-ES
 			          "régimen": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "régimen": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -200,6 +285,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "canal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "canal": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -288,6 +379,12 @@ cultureInfo es-ES
 			          "modalidad": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "modalidad": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -306,7 +403,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "estado DUA": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "DUA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "DUA": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -324,6 +434,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "garantía 160°": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "garantía 160°": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -344,7 +460,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha autorización levante": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "date": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
@@ -365,6 +494,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jerarquía de fecha": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -388,7 +523,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha autorización levante año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha autorización levante año": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -412,7 +559,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha autorización levante trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha autorización levante trimestre": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -436,7 +595,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha autorización levante me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha autorización levante me": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -460,7 +631,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha autorización levante día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha autorización levante día": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -481,7 +664,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "valor CIF": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "CIF": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CIF": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -499,6 +695,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "monto trib. liquidados $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "monto trib. liquidados $": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -536,6 +738,12 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "monto trib. liquidados s/.": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "monto trib. liquidado s/.": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -549,6 +757,13 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "monto trib. liquidados s": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "monto trib. liquidado s": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -557,6 +772,13 @@ cultureInfo es-ES
 			        },
 			        {
 			          "monto trib . liquidados s .": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "monto trib . liquidados s .": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -581,6 +803,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "cantidad series": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cantidad series": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -669,6 +897,12 @@ cultureInfo es-ES
 			          "consignatario": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "consignatario": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -683,6 +917,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "agencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "agencia": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -700,6 +940,17 @@ cultureInfo es-ES
 			          "asignada": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "asignada": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "asignación": {
+			            "LastModified": "2025-08-06T03:19:38.6422916Z"
+			          }
 			        }
 			      ]
 			    },
@@ -716,6 +967,12 @@ cultureInfo es-ES
 			          "n° dua": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "n° dua": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -730,6 +987,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "tipo asignación": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo asignación": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -750,7 +1013,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha/hora asignación": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "date": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
@@ -762,13 +1038,34 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "fecha hora asignación": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
+			          "fecha hora asignación": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora asignación": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora asignación": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -789,6 +1086,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jerarquía de fecha": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -812,12 +1115,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora asignación año": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora asignación año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -829,7 +1151,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora asignación año": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora asignación año": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora asignación año": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -854,12 +1190,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora asignación trimestre": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora asignación trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -871,7 +1226,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora asignación trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora asignación trimestre": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora asignación trimestre": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -896,12 +1265,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora asignación me": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora asignación me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -913,7 +1301,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora asignación me": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora asignación me": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora asignación me": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -938,12 +1340,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora asignación día": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora asignación día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -955,7 +1376,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora asignación día": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora asignación día": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora asignación día": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -977,7 +1412,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha/hora diligencia despacho": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "date": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
@@ -989,13 +1437,34 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "fecha hora diligencia despacho": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
+			          "fecha hora diligencia despacho": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora diligencia despacho": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora diligencia despacho": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1016,6 +1485,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jerarquía de fecha": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1039,12 +1514,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora diligencia despacho año": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora diligencia despacho año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1056,7 +1550,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora diligencia despacho año": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora diligencia despacho año": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora diligencia despacho año": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1081,12 +1589,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora diligencia despacho trimestre": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora diligencia despacho trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1098,7 +1625,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora diligencia despacho trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora diligencia despacho trimestre": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora diligencia despacho trimestre": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1123,12 +1664,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora diligencia despacho me": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora diligencia despacho me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1140,7 +1700,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora diligencia despacho me": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora diligencia despacho me": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora diligencia despacho me": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1165,12 +1739,31 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha/hora diligencia despacho día": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
+			          "fecha/hora diligencia despacho día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1182,7 +1775,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora diligencia despacho día": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora diligencia despacho día": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora diligencia despacho día": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1202,6 +1809,12 @@ cultureInfo es-ES
 			          "punto de llegada": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "punto de llegada": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -1216,6 +1829,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "minutos desde asignación hasta diligencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "minutos desde asignación hasta diligencia": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -1243,6 +1862,12 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "días en despacho": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "día en despacho": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1262,6 +1887,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "días desde la numeración hasta la asignación": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "días desde la numeración hasta la asignación": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -1289,6 +1920,12 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "días de la numeración hasta la diligencia": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "día de la numeración hasta la diligencia": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1310,6 +1947,12 @@ cultureInfo es-ES
 			          "especialista": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "especialista": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -1326,6 +1969,12 @@ cultureInfo es-ES
 			          "día de asignación": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "día de asignación": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -1339,6 +1988,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "cambio canal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cambio canal": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -1427,6 +2082,12 @@ cultureInfo es-ES
 			          "n° dua": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "n° dua": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -1445,7 +2106,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha numeración": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "date": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
@@ -1466,6 +2140,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jerarquía de fecha": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1489,7 +2169,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración año": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1513,7 +2205,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración trimestre": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1537,7 +2241,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración me": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1561,7 +2277,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha numeración día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha numeración día": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1578,6 +2306,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "canal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "canal": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -1666,6 +2400,12 @@ cultureInfo es-ES
 			          "modalidad": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "modalidad": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -1684,7 +2424,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "estado DUA": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "DUA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "DUA": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1706,7 +2459,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha/hora primera recep. declar": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1718,7 +2484,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora primera recep . declar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora primera recep. declar": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora primera recep. declar": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1740,7 +2520,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha/hora solic. remis dec. rec. fis": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1752,7 +2545,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora solic . remis dec . rec . fis": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora solic. remis dec. rec. fis": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora solic. remis dec. rec. fis": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1770,6 +2577,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "motivo de remis reconocimiento fisico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "motivo de remis reconocimiento fisico": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1790,7 +2603,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha/hora autoriz. jefe": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fecha": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1802,7 +2628,21 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha hora autoriz . jefe": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
 			          "hora autoriz. jefe": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hora autoriz. jefe": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1819,6 +2659,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "duda razonable": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duda razonable": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1840,6 +2686,12 @@ cultureInfo es-ES
 			          "n° dua": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "n° dua": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -1854,6 +2706,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "canal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "canal": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -1944,7 +2802,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "estado DUA": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "DUA": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "DUA": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1962,6 +2833,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "garantía 160°": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "garantía 160°": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -1982,7 +2859,20 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "fecha de diligencia duda razonable": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "date": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
@@ -2003,6 +2893,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "jerarquía de fecha": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "jerarquía de fecha": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2026,7 +2922,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "año": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha de diligencia duda razonable año": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de diligencia duda razonable año": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2050,7 +2958,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha de diligencia duda razonable trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de diligencia duda razonable trimestre": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2074,7 +2994,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "me": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha de diligencia duda razonable me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de diligencia duda razonable me": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2098,7 +3030,19 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "día": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "fecha de diligencia duda razonable día": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fecha de diligencia duda razonable día": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2117,6 +3061,12 @@ cultureInfo es-ES
 			          "estado de duda razonable": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "estado de duda razonable": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2131,6 +3081,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "orden de depósito": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "orden de depósito": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2149,6 +3105,12 @@ cultureInfo es-ES
 			          "monto de orden de depósito": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "monto de orden de depósito": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2163,6 +3125,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "orden de devolución": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "orden de devolución": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2181,6 +3149,12 @@ cultureInfo es-ES
 			          "LC(s) asociada": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "LC(s) asociada": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2197,6 +3171,12 @@ cultureInfo es-ES
 			          "estado de la LC": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "estado de la LC": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2210,6 +3190,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "restringida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "restringida": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2228,6 +3214,12 @@ cultureInfo es-ES
 			          "n° dua": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "n° dua": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2244,6 +3236,12 @@ cultureInfo es-ES
 			          "régimen": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "régimen": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2258,6 +3256,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "canal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "canal": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2346,6 +3350,12 @@ cultureInfo es-ES
 			          "modalidad": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "modalidad": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2360,6 +3370,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "estado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "estado": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2378,6 +3394,12 @@ cultureInfo es-ES
 			          "consignatario": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "consignatario": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2392,6 +3414,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "agencia de aduana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "agencia de aduana": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2410,6 +3438,12 @@ cultureInfo es-ES
 			          "garantía 160°": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "garantía 160°": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2426,6 +3460,12 @@ cultureInfo es-ES
 			          "tratamiento": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "tratamiento": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2439,6 +3479,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "medida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "medida": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2457,6 +3503,12 @@ cultureInfo es-ES
 			          "rojas por asignar": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "rojas por asignar": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2471,6 +3523,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "naranjas por asignar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "naranjas por asignar": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2489,6 +3547,12 @@ cultureInfo es-ES
 			          "numeradas naranja": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "numeradas naranja": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2504,6 +3568,33 @@ cultureInfo es-ES
 			        {
 			          "total de numeradas": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total de numeradas": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Num. por Mes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Num. por Mes": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        },
 			        {
@@ -2525,16 +3616,6 @@ cultureInfo es-ES
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "Num. por Mes": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -2549,6 +3630,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "%naranja": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "%naranja": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2587,6 +3674,12 @@ cultureInfo es-ES
 			          "numeradas roja": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "numeradas roja": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2601,6 +3694,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "%roja": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "%roja": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2641,6 +3740,12 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "%verdes": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "percentage verde": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -2677,7 +3782,24 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "acumulado de numeradas mes": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "Acumulado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Acumulado": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2699,6 +3821,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "total de asignadas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total de asignadas": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2737,6 +3865,12 @@ cultureInfo es-ES
 			          "asignadas naranja": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "asignadas naranja": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2751,6 +3885,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "asignadas roja": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "asignadas roja": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2771,7 +3911,24 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "variación asigandas": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "Variación": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Variación": {
+			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2795,6 +3952,12 @@ cultureInfo es-ES
 			          "especialistas asignados por fecha": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "especialistas asignados por fecha": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2809,6 +3972,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "restringida total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "restringida total": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2849,6 +4018,12 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
+			          "%restringida": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
 			          "percentage restringida": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -2883,6 +4058,12 @@ cultureInfo es-ES
 			          "latitud": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "latitud": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2899,6 +4080,12 @@ cultureInfo es-ES
 			          "longitud": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "longitud": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2912,6 +4099,13 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "partida": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "partida": {
+			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.87
 			          }
@@ -2931,6 +4125,12 @@ cultureInfo es-ES
 			          "n° dua": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "n° dua": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2945,6 +4145,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "partida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "partida": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -2962,6 +4168,12 @@ cultureInfo es-ES
 			          "registro": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "registro": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -2976,6 +4188,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "dam": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dam": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3064,6 +4282,12 @@ cultureInfo es-ES
 			          "dt": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "dt": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -3078,6 +4302,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "atencion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "atencion": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -3096,6 +4326,12 @@ cultureInfo es-ES
 			          "declarante": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "declarante": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -3110,6 +4346,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "prov": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prov": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -3128,6 +4370,12 @@ cultureInfo es-ES
 			          "subpartida": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "subpartida": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
@@ -3142,6 +4390,12 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "descrip": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "descrip": {
+			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        }
@@ -3160,11 +4414,611 @@ cultureInfo es-ES
 			          "importador": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "importador": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_me_has_duda_razonable_fecha_de_diligencia_duda_razonable_día": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.me": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.día": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me5"
+			        }
+			      ]
+			    },
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_trimestre_has_duda_razonable_fecha_de_diligencia_duda_razonable_me": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.me": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres5"
+			        }
+			      ]
+			    },
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_año_has_duda_razonable_fecha_de_diligencia_duda_razonable_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.año": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años5"
+			        }
+			      ]
+			    },
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_día": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.día": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días"
+			        }
+			      ]
+			    },
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_me": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.me": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_me"
+			        }
+			      ]
+			    },
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_trimestres"
+			        }
+			      ]
+			    },
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_año": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.año": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
+			        }
+			      ]
+			    },
+			    "duda_razonable_fecha_de_diligencia_duda_razonable_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "DUDA RAZONABLE"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "duda_razonable.fecha_de_diligencia_duda_razonable": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable"
+			          }
+			        },
+			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable"
+			            },
+			            "Object": {
+			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fecha_de_diligencia_duda_razonables_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "cambio_canal_fecha_numeración_me_has_cambio_canal_fecha_numeración_día": {
+			      "Binding": {
+			        "ConceptualEntity": "CAMBIO CANAL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cambio_canal.fecha_numeración.me": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.me"
+			          }
+			        },
+			        "cambio_canal.fecha_numeración.día": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.me"
+			            },
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_días1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.día"
+			            },
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_have_me1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.día"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "días_are_in_me4"
+			        }
+			      ]
+			    },
+			    "cambio_canal_fecha_numeración_trimestre_has_cambio_canal_fecha_numeración_me": {
+			      "Binding": {
+			        "ConceptualEntity": "CAMBIO CANAL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cambio_canal.fecha_numeración.trimestre": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.trimestre"
+			          }
+			        },
+			        "cambio_canal.fecha_numeración.me": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.trimestre"
+			            },
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_me1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.me"
+			            },
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.me"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "me_are_in_trimestres4"
+			        }
+			      ]
+			    },
+			    "cambio_canal_fecha_numeración_año_has_cambio_canal_fecha_numeración_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "CAMBIO CANAL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cambio_canal.fecha_numeración.año": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.año"
+			          }
+			        },
+			        "cambio_canal.fecha_numeración.trimestre": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.año"
+			            },
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "años_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.trimestre"
+			            },
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_años1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_años4"
+			        }
+			      ]
+			    },
+			    "cambio_canal_fecha_numeración_jerarquía_de_fecha_has_cambio_canal_fecha_numeración_día": {
+			      "Binding": {
+			        "ConceptualEntity": "CAMBIO CANAL"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cambio_canal.fecha_numeración.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.jerarquía_de_fecha"
+			          }
+			        },
+			        "cambio_canal.fecha_numeración.día": {
+			          "Target": {
+			            "Entity": "cambio_canal.fecha_numeración.día"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cambio_canal.fecha_numeración.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "cambio_canal.fecha_numeración.día"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_días1"
+			        }
+			      ]
+			    },
 			    "cambio_canal_fecha_numeración_jerarquía_de_fecha_has_cambio_canal_fecha_numeración_me": {
 			      "Binding": {
 			        "ConceptualEntity": "CAMBIO CANAL"
@@ -3194,7 +5048,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me"
+			          "ID": "jerarquía_de_fechas_have_me1"
 			        }
 			      ]
 			    },
@@ -3227,7 +5081,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres"
+			          "ID": "jerarquía_de_fechas_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -3260,7 +5114,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años"
+			          "ID": "jerarquía_de_fechas_have_años1"
 			        }
 			      ]
 			    },
@@ -3326,7 +5180,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_días"
+			          "ID": "me_have_días2"
 			        },
 			        {
 			          "Attribute": {
@@ -3339,7 +5193,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "días_have_me"
+			          "ID": "días_have_me2"
 			        },
 			        {
 			          "Preposition": {
@@ -3392,7 +5246,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_me"
+			          "ID": "trimestres_have_me2"
 			        },
 			        {
 			          "Attribute": {
@@ -3405,7 +5259,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_trimestres"
+			          "ID": "me_have_trimestres2"
 			        },
 			        {
 			          "Preposition": {
@@ -3458,7 +5312,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "años_have_trimestres"
+			          "ID": "años_have_trimestres2"
 			        },
 			        {
 			          "Attribute": {
@@ -3471,7 +5325,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_años"
+			          "ID": "trimestres_have_años2"
 			        },
 			        {
 			          "Preposition": {
@@ -3524,7 +5378,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días"
+			          "ID": "jerarquía_de_fechas_have_días2"
 			        }
 			      ]
 			    },
@@ -3557,7 +5411,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me1"
+			          "ID": "jerarquía_de_fechas_have_me2"
 			        }
 			      ]
 			    },
@@ -3590,7 +5444,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres1"
+			          "ID": "jerarquía_de_fechas_have_trimestres2"
 			        }
 			      ]
 			    },
@@ -3623,7 +5477,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años1"
+			          "ID": "jerarquía_de_fechas_have_años2"
 			        }
 			      ]
 			    },
@@ -3689,7 +5543,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_días1"
+			          "ID": "me_have_días3"
 			        },
 			        {
 			          "Attribute": {
@@ -3702,7 +5556,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "días_have_me1"
+			          "ID": "días_have_me3"
 			        },
 			        {
 			          "Preposition": {
@@ -3755,7 +5609,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_me1"
+			          "ID": "trimestres_have_me3"
 			        },
 			        {
 			          "Attribute": {
@@ -3768,7 +5622,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_trimestres1"
+			          "ID": "me_have_trimestres3"
 			        },
 			        {
 			          "Preposition": {
@@ -3821,7 +5675,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "años_have_trimestres1"
+			          "ID": "años_have_trimestres3"
 			        },
 			        {
 			          "Attribute": {
@@ -3834,7 +5688,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_años1"
+			          "ID": "trimestres_have_años3"
 			        },
 			        {
 			          "Preposition": {
@@ -3887,7 +5741,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días1"
+			          "ID": "jerarquía_de_fechas_have_días3"
 			        }
 			      ]
 			    },
@@ -3920,7 +5774,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me2"
+			          "ID": "jerarquía_de_fechas_have_me3"
 			        }
 			      ]
 			    },
@@ -3953,7 +5807,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres2"
+			          "ID": "jerarquía_de_fechas_have_trimestres3"
 			        }
 			      ]
 			    },
@@ -3986,7 +5840,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años2"
+			          "ID": "jerarquía_de_fechas_have_años3"
 			        }
 			      ]
 			    },
@@ -4052,7 +5906,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_días2"
+			          "ID": "me_have_días4"
 			        },
 			        {
 			          "Attribute": {
@@ -4065,7 +5919,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "días_have_me2"
+			          "ID": "días_have_me4"
 			        },
 			        {
 			          "Preposition": {
@@ -4118,7 +5972,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_me2"
+			          "ID": "trimestres_have_me4"
 			        },
 			        {
 			          "Attribute": {
@@ -4131,7 +5985,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_trimestres2"
+			          "ID": "me_have_trimestres4"
 			        },
 			        {
 			          "Preposition": {
@@ -4184,7 +6038,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "años_have_trimestres2"
+			          "ID": "años_have_trimestres4"
 			        },
 			        {
 			          "Attribute": {
@@ -4197,7 +6051,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_años2"
+			          "ID": "trimestres_have_años4"
 			        },
 			        {
 			          "Preposition": {
@@ -4250,7 +6104,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días2"
+			          "ID": "jerarquía_de_fechas_have_días4"
 			        }
 			      ]
 			    },
@@ -4283,7 +6137,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me3"
+			          "ID": "jerarquía_de_fechas_have_me4"
 			        }
 			      ]
 			    },
@@ -4316,7 +6170,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres3"
+			          "ID": "jerarquía_de_fechas_have_trimestres4"
 			        }
 			      ]
 			    },
@@ -4349,7 +6203,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años3"
+			          "ID": "jerarquía_de_fechas_have_años4"
 			        }
 			      ]
 			    },
@@ -4415,7 +6269,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_días3"
+			          "ID": "me_have_días5"
 			        },
 			        {
 			          "Attribute": {
@@ -4428,7 +6282,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "días_have_me3"
+			          "ID": "días_have_me5"
 			        },
 			        {
 			          "Preposition": {
@@ -4481,7 +6335,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_me3"
+			          "ID": "trimestres_have_me5"
 			        },
 			        {
 			          "Attribute": {
@@ -4494,7 +6348,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "me_have_trimestres3"
+			          "ID": "me_have_trimestres5"
 			        },
 			        {
 			          "Preposition": {
@@ -4547,7 +6401,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "años_have_trimestres3"
+			          "ID": "años_have_trimestres5"
 			        },
 			        {
 			          "Attribute": {
@@ -4560,7 +6414,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_años3"
+			          "ID": "trimestres_have_años5"
 			        },
 			        {
 			          "Preposition": {
@@ -4613,7 +6467,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días3"
+			          "ID": "jerarquía_de_fechas_have_días5"
 			        }
 			      ]
 			    },
@@ -4646,7 +6500,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me4"
+			          "ID": "jerarquía_de_fechas_have_me5"
 			        }
 			      ]
 			    },
@@ -4679,7 +6533,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres4"
+			          "ID": "jerarquía_de_fechas_have_trimestres5"
 			        }
 			      ]
 			    },
@@ -4712,7 +6566,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años4"
+			          "ID": "jerarquía_de_fechas_have_años5"
 			        }
 			      ]
 			    },
@@ -7762,600 +9616,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "numeradas_have_n_duas"
-			        }
-			      ]
-			    },
-			    "cambio_canal_fecha_numeración_jerarquía_de_fecha_has_cambio_canal_fecha_numeración_día": {
-			      "Binding": {
-			        "ConceptualEntity": "CAMBIO CANAL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cambio_canal.fecha_numeración.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.jerarquía_de_fecha"
-			          }
-			        },
-			        "cambio_canal.fecha_numeración.día": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días4"
-			        }
-			      ]
-			    },
-			    "cambio_canal_fecha_numeración_año_has_cambio_canal_fecha_numeración_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "CAMBIO CANAL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cambio_canal.fecha_numeración.año": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.año"
-			          }
-			        },
-			        "cambio_canal.fecha_numeración.trimestre": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.año"
-			            },
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "años_have_trimestres4"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.trimestre"
-			            },
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_años4"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_años4"
-			        }
-			      ]
-			    },
-			    "cambio_canal_fecha_numeración_trimestre_has_cambio_canal_fecha_numeración_me": {
-			      "Binding": {
-			        "ConceptualEntity": "CAMBIO CANAL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cambio_canal.fecha_numeración.trimestre": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.trimestre"
-			          }
-			        },
-			        "cambio_canal.fecha_numeración.me": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.trimestre"
-			            },
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_me4"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.me"
-			            },
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_trimestres4"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.me"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_are_in_trimestres4"
-			        }
-			      ]
-			    },
-			    "cambio_canal_fecha_numeración_me_has_cambio_canal_fecha_numeración_día": {
-			      "Binding": {
-			        "ConceptualEntity": "CAMBIO CANAL"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cambio_canal.fecha_numeración.me": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.me"
-			          }
-			        },
-			        "cambio_canal.fecha_numeración.día": {
-			          "Target": {
-			            "Entity": "cambio_canal.fecha_numeración.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.me"
-			            },
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_días4"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.día"
-			            },
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_have_me4"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "cambio_canal.fecha_numeración.día"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "cambio_canal.fecha_numeración.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_are_in_me4"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_has_jerarquía_de_fecha": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fecha_de_diligencia_duda_razonables_have_jerarquía_de_fechas"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_año": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.año": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años5"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_trimestres5"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_me": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.me": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_me5"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_jerarquía_de_fecha_has_duda_razonable_fecha_de_diligencia_duda_razonable_día": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.día": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_días5"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_año_has_duda_razonable_fecha_de_diligencia_duda_razonable_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.año": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "años_have_trimestres5"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_años5"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_años5"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_trimestre_has_duda_razonable_fecha_de_diligencia_duda_razonable_me": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.me": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_me5"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_trimestres5"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_are_in_trimestres5"
-			        }
-			      ]
-			    },
-			    "duda_razonable_fecha_de_diligencia_duda_razonable_me_has_duda_razonable_fecha_de_diligencia_duda_razonable_día": {
-			      "Binding": {
-			        "ConceptualEntity": "DUDA RAZONABLE"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.me": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			          }
-			        },
-			        "duda_razonable.fecha_de_diligencia_duda_razonable.día": {
-			          "Target": {
-			            "Entity": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "me_have_días5"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
-			            },
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_have_me5"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.día"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "duda_razonable.fecha_de_diligencia_duda_razonable.me"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "días_are_in_me5"
 			        }
 			      ]
 			    }

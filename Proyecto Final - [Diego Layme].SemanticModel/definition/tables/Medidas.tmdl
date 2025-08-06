@@ -43,6 +43,7 @@ table Medidas
 			return
 			
 			Divide(_naranja,_total,0)
+		displayFolder: Participación
 		lineageTag: 1fae89a0-f1b0-48f0-93d1-9c0bd55d3de5
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -56,11 +57,13 @@ table Medidas
 		lineageTag: a06b3109-b187-41cb-b5f1-85bdb0706d28
 
 	measure %Roja = divide([Numeradas Roja],[Total de Numeradas],0)
+		displayFolder: Participación
 		lineageTag: 2de93cb1-a25e-42f6-b95f-739becb316f8
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure %Verdes = 1-[%Naranja]-[%Roja]
+		displayFolder: Participación
 		lineageTag: 484dc1bd-461f-416b-9731-c97527060be6
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -122,6 +125,7 @@ table Medidas
 			return
 			
 			Divide(_restringidas,_total,0)
+		displayFolder: Participación
 		lineageTag: 0d1a63ef-173d-4305-8062-c0f768da443f
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
