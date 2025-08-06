@@ -1,0 +1,101 @@
+table RESTRINGIDAS
+	lineageTag: 462692ee-4fcb-47e4-8c7a-a31c91ad5dc2
+
+	column 'N° DUA'
+		dataType: string
+		lineageTag: 855f8752-6654-4cbc-85bd-60e97533fceb
+		summarizeBy: none
+		sourceColumn: N° DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Régimen
+		dataType: string
+		lineageTag: 20a08962-c78b-4519-99a6-fa7bdec8ea0e
+		summarizeBy: none
+		sourceColumn: Régimen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Canal
+		dataType: string
+		lineageTag: 1865ff98-d3d1-48e3-a4b0-51a159b334c2
+		summarizeBy: none
+		sourceColumn: Canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modalidad
+		dataType: string
+		lineageTag: bb29755f-2e1a-4d2a-9cf3-9c5bda601bbf
+		summarizeBy: none
+		sourceColumn: Modalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column Estado
+		dataType: string
+		lineageTag: 9961a092-1967-44d2-b9f7-4acfb2b7dcee
+		summarizeBy: none
+		sourceColumn: Estado
+
+		annotation SummarizationSetBy = Automatic
+
+	column Consignatario
+		dataType: string
+		lineageTag: 8b7892e1-ac83-4ec3-8ab7-f423c9fbbdc5
+		summarizeBy: none
+		sourceColumn: Consignatario
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Agencia de Aduana'
+		dataType: string
+		lineageTag: 39d1a6b9-e8d6-4134-b20f-5dba818406ce
+		summarizeBy: none
+		sourceColumn: Agencia de Aduana
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Garantía 160°'
+		dataType: string
+		lineageTag: 9b365d24-3130-437e-b1c8-edc473d844d0
+		summarizeBy: none
+		sourceColumn: Garantía 160°
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tratamiento
+		dataType: string
+		lineageTag: 28bd8236-b98e-4e4e-b7ec-2d9f630977ec
+		summarizeBy: none
+		sourceColumn: Tratamiento
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RESTRINGIDAS = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("D:\Usuarios\dlayme\OneDrive - SUNAT\DLAYME\PROYECTO FINAL PB\RESTRINGIDAS\2025-08-03_071957_ReporteGestion.xls"), null, true),
+				    report1 = Origen{[Name="report0"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(report1,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}, {"Column20", Int64.Type}, {"Column21", type text}, {"Column22", type text}, {"Column23", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Column1", "Column2", "Column3", "Column5", "Column9", "Column16", "Column19", "Column20", "Column21", "Column22", "Column23"}),
+				    #"Filas superiores quitadas" = Table.Skip(#"Columnas quitadas",6),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Filas superiores quitadas", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Nro.", type text}, {"N° DUA", type text}, {"Fec. Numeración", type text}, {"Régimen", type text}, {"Canal", type text}, {"Modalidad", type text}, {"Estado DUA", type text}, {"Column8", type text}, {"Consignatario", type text}, {"Agencia de Aduana", type text}, {"Garantía 160°", type text}, {"Tratamiento", type text}}),
+				    #"Columnas quitadas1" = Table.RemoveColumns(#"Tipo cambiado1",{"Nro."}),
+				    #"Duplicados quitados" = Table.Distinct(#"Columnas quitadas1", {"N° DUA"}),
+				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Duplicados quitados", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Tipo cambiado2" = Table.TransformColumnTypes(#"Filas en blanco eliminadas",{{"Fec. Numeración", type datetime}}),
+				    #"Errores quitados" = Table.RemoveRowsWithErrors(#"Tipo cambiado2", {"Fec. Numeración"}),
+				    #"Columnas quitadas2" = Table.RemoveColumns(#"Errores quitados",{"Estado DUA"}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columnas quitadas2",{{"Column8", "Estado"}}),
+				    #"Columnas quitadas3" = Table.RemoveColumns(#"Columnas con nombre cambiado",{"Fec. Numeración"})
+				in
+				    #"Columnas quitadas3"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

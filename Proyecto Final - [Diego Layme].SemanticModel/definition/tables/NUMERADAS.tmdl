@@ -1,0 +1,164 @@
+table NUMERADAS
+	lineageTag: 0477d508-7605-4de1-bdf4-4d036a070b23
+
+	column 'N° DUA'
+		dataType: string
+		lineageTag: 83d5d89a-e725-436b-8122-83b420ddbbcd
+		summarizeBy: none
+		sourceColumn: N° DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha Numeración'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: cce51457-9075-4b1d-bab6-1fdd2172452f
+		summarizeBy: none
+		sourceColumn: Fecha Numeración
+
+		variation Variación
+			isDefault
+			relationship: 73cd9ef1-2e15-49a0-b439-a70ad8536b7c
+			defaultHierarchy: LocalDateTable_bbde4b50-fdf8-4b2b-bb19-b1d1c5447442.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Régimen
+		dataType: string
+		lineageTag: 96c5285f-f81d-40a8-a7e0-d215c7926423
+		summarizeBy: none
+		sourceColumn: Régimen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Canal
+		dataType: string
+		lineageTag: 14225ccc-9731-46f2-8497-890ad0125fc6
+		summarizeBy: none
+		sourceColumn: Canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modalidad
+		dataType: string
+		lineageTag: 70c03f25-6e30-482c-91a7-c82b48cac5fe
+		summarizeBy: none
+		sourceColumn: Modalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado DUA'
+		dataType: string
+		lineageTag: 098180fd-996d-47fb-9936-63889724d9c0
+		summarizeBy: none
+		sourceColumn: Estado DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Garantía 160°'
+		dataType: string
+		lineageTag: a1118049-9519-49d1-b00f-cb420992bbda
+		summarizeBy: none
+		sourceColumn: Garantía 160°
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha Autorización Levante'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 38dd1d70-be52-495e-a348-14046b4d93f4
+		summarizeBy: none
+		sourceColumn: Fecha Autorización Levante
+
+		variation Variación
+			isDefault
+			relationship: 451421c9-2145-4798-b9da-2bc7f715e76b
+			defaultHierarchy: LocalDateTable_baf2ed59-ac37-4e16-ac0d-71cb78c22d0a.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Valor CIF'
+		dataType: double
+		lineageTag: 71e79f58-107c-4c2c-9b99-acb25c474088
+		summarizeBy: sum
+		sourceColumn: Valor CIF
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Monto trib. liquidados $'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5cc7c64e-618b-4d18-b834-ad7afd5541f4
+		summarizeBy: sum
+		sourceColumn: Monto trib. liquidados $
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Monto trib. liquidados S/.'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0992ca2c-abd4-4308-8aa4-d30c8d1d5c33
+		summarizeBy: sum
+		sourceColumn: Monto trib. liquidados S/.
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cantidad Series'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d530688-75be-4139-a026-508fd8e078df
+		summarizeBy: sum
+		sourceColumn: Cantidad Series
+
+		annotation SummarizationSetBy = Automatic
+
+	column Consignatario
+		dataType: string
+		lineageTag: 37349812-6a0d-4dcb-b738-5300c2804b0e
+		summarizeBy: none
+		sourceColumn: Consignatario
+
+		annotation SummarizationSetBy = Automatic
+
+	column Agencia
+		dataType: string
+		lineageTag: 3f16f48a-d94f-4e46-bbab-24aa77af37a5
+		summarizeBy: none
+		sourceColumn: Agencia
+
+		annotation SummarizationSetBy = Automatic
+
+	partition NUMERADAS = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("D:\Usuarios\dlayme\OneDrive - SUNAT\DLAYME\PROYECTO FINAL PB\NUMERADAS\2025-08-03_040505_ReporteGestion.xls"), null, true),
+				    report1 = Origen{[Name="report0"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(report1,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Column1"}),
+				    #"Filas superiores quitadas" = Table.Skip(#"Columnas quitadas",6),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Filas superiores quitadas", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Nro.", Int64.Type}, {"N° DUA", type text}, {"Fecha Numeración", type date}, {"Régimen", type text}, {"Canal", type text}, {"Modalidad", type text}, {"Estado DUA", type text}, {"Consignatario", type text}, {"Agencia de Aduana", type text}, {"Garantía 160°", type text}, {"Fecha Autorización Levante", type date}, {"Valor CIF", type number}, {"Monto trib. liquidados $", Int64.Type}, {"Monto trib. liquidados S/.", Int64.Type}, {"Cantidad Series", Int64.Type}, {"Categoría del envío", type text}, {"Garante 160", Int64.Type}, {"Column18", type text}}),
+				    #"Columnas quitadas1" = Table.RemoveColumns(#"Tipo cambiado1",{"Column18", "Categoría del envío", "Nro.", "Garante 160"}),
+				    #"Rango de texto insertado" = Table.AddColumn(#"Columnas quitadas1", "Rango de texto", each Text.Middle([Consignatario], 9, 6), type text),
+				    #"Prefijo insertado" = Table.AddColumn(#"Rango de texto insertado", "Prefijo", each "IMP-" & [Rango de texto], type text),
+				    #"Rango de texto insertado1" = Table.AddColumn(#"Prefijo insertado", "Rango de texto.1", each Text.Middle([Agencia de Aduana], 5, 6), type text),
+				    #"Sufijo insertado" = Table.AddColumn(#"Rango de texto insertado1", "Sufijo", each [Rango de texto.1] & "-AGE", type text),
+				    #"Columnas quitadas2" = Table.RemoveColumns(#"Sufijo insertado",{"Consignatario", "Agencia de Aduana", "Rango de texto", "Rango de texto.1"}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columnas quitadas2",{{"Prefijo", "Consignatario"}, {"Sufijo", "Agencia"}}),
+				    #"Duplicados quitados" = Table.Distinct(#"Columnas con nombre cambiado", {"N° DUA"}),
+				    #"Errores quitados" = Table.RemoveRowsWithErrors(#"Duplicados quitados", {"N° DUA"}),
+				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Errores quitados", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null})))
+				in
+				    #"Filas en blanco eliminadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

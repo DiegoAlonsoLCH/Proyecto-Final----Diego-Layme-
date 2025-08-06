@@ -1,0 +1,127 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 508.888905843099,
+        "y": 75.5555534362793
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 526.66666666666674,
+            "y": 48.333333333333336
+          },
+          "nodeIndex": "NUMERADAS",
+          "nodeLineageTag": "0477d508-7605-4de1-bdf4-4d036a070b23",
+          "size": {
+            "height": 300,
+            "width": 261
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 51.666666666666742
+          },
+          "nodeIndex": "ASIGNADAS",
+          "nodeLineageTag": "e3402047-fc0c-4ae6-bfd1-bf53b13018ea",
+          "size": {
+            "height": 300,
+            "width": 408
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 537.33333333333337,
+            "y": 413.66666666666669
+          },
+          "nodeIndex": "CAMBIO CANAL",
+          "nodeLineageTag": "39a9b4aa-3dba-4b63-87e2-3f1b0029c63a",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1009.6666666666666,
+            "y": 318.33333333333337
+          },
+          "nodeIndex": "DUDA RAZONABLE",
+          "nodeLineageTag": "51c75431-d540-4d79-8d1e-8521ac3064b5",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 993.66666666666674,
+            "y": 8.8888804117838518
+          },
+          "nodeIndex": "RESTRINGIDAS",
+          "nodeLineageTag": "462692ee-4fcb-47e4-8c7a-a31c91ad5dc2",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0,
+          "expandedHeight": 296
+        },
+        {
+          "location": {
+            "x": 1861.6666666666665,
+            "y": 188.83333333333334
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "626b4a61-a106-4500-b4d7-c873ab159945",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1480.6666666666665,
+            "y": 270.83333333333337
+          },
+          "nodeIndex": "Partidas",
+          "nodeLineageTag": "888cd617-783b-4022-bf7c-df74e5190b3a",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1388.5556233723958,
+            "y": 457.16666666666669
+          },
+          "nodeIndex": "Registro",
+          "nodeLineageTag": "04ed6cf4-6cff-4584-b24d-101cb79aaa1a",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 60,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

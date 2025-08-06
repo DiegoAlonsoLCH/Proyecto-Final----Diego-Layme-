@@ -1,0 +1,107 @@
+table 'CAMBIO CANAL'
+	lineageTag: 39a9b4aa-3dba-4b63-87e2-3f1b0029c63a
+
+	column 'N° DUA'
+		dataType: string
+		lineageTag: 226eb585-b6fe-4a58-b88b-24c93ea9e22e
+		summarizeBy: none
+		sourceColumn: N° DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha Numeración'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fb8b9d58-35fa-40e6-b439-a8452f400446
+		summarizeBy: none
+		sourceColumn: Fecha Numeración
+
+		variation Variación
+			isDefault
+			relationship: 07b256cb-600f-4d7f-b471-5be9ee248d6a
+			defaultHierarchy: LocalDateTable_3b3d1b85-42df-48a2-b2b8-0db5f51a49b5.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Canal
+		dataType: string
+		lineageTag: 76ab2834-3a9c-4cda-80fe-ccffa957fb5b
+		summarizeBy: none
+		sourceColumn: Canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modalidad
+		dataType: string
+		lineageTag: 168b8822-8036-4358-9122-0e286790a505
+		summarizeBy: none
+		sourceColumn: Modalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado DUA'
+		dataType: string
+		lineageTag: a436dddf-017d-4fce-b6d5-2d8b99b34f35
+		summarizeBy: none
+		sourceColumn: Estado DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha/hora Primera Recep. Declar'
+		dataType: string
+		lineageTag: 6b743251-00ea-401f-94d1-bac4dfc10c1e
+		summarizeBy: none
+		sourceColumn: Fecha/hora Primera Recep. Declar
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha/hora Solic. remis Dec. Rec. Fis'
+		dataType: string
+		lineageTag: e0d15181-8633-45b2-bbb1-e3a0b472ebc2
+		summarizeBy: none
+		sourceColumn: Fecha/hora Solic. remis Dec. Rec. Fis
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Motivo de remis Reconocimiento fisico'
+		dataType: string
+		lineageTag: 86016273-99c9-4f2a-b87d-d344896d0308
+		summarizeBy: none
+		sourceColumn: Motivo de remis Reconocimiento fisico
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha/hora autoriz. jefe'
+		dataType: string
+		lineageTag: 3b73bd2c-b07d-4e91-895a-75e6258d4938
+		summarizeBy: none
+		sourceColumn: Fecha/hora autoriz. jefe
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'CAMBIO CANAL' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("D:\Usuarios\dlayme\OneDrive - SUNAT\DLAYME\PROYECTO FINAL PB\NARANJA A ROJO\2025-08-03_065752_ReporteGestion.xls"), null, true),
+				    report1 = Origen{[Name="report0"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(report1,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", Int64.Type}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}, {"Column20", type text}, {"Column21", type text}, {"Column22", type text}, {"Column23", type text}, {"Column24", type text}, {"Column25", Int64.Type}, {"Column26", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Column1"}),
+				    #"Filas superiores quitadas" = Table.Skip(#"Columnas quitadas",6),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Filas superiores quitadas", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Nro.", Int64.Type}, {"Column2", type text}, {"N° DUA", type text}, {"Fecha Numeración", type date}, {"Régimen", type text}, {"Column6", Int64.Type}, {"Canal", type text}, {"Modalidad", type text}, {"Column9", type text}, {"Estado DUA", type text}, {"Consignatario", type text}, {"Agencia de Aduana", type text}, {"Garantía 160°", type text}, {"Fecha/hora Primera Recep. Declar", type text}, {"Func. aduanero asignado", type text}, {"Column16", type text}, {"Fecha/hora Solic. remis Dec. Rec. Fis", type text}, {"Motivo de remis Reconocimiento fisico", type text}, {"Fecha/hora autoriz. jefe", type text}, {"Fecha/hora diligencia", type text}, {"Incidencias registradas", type text}, {"Categoría del envío", type text}, {"Garante 160", type text}, {"Column24", Int64.Type}, {"Column25", type text}}),
+				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Tipo cambiado1", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Columnas quitadas1" = Table.RemoveColumns(#"Filas en blanco eliminadas",{"Column2"}),
+				    #"Filas en blanco eliminadas1" = Table.SelectRows(#"Columnas quitadas1", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Columnas quitadas2" = Table.RemoveColumns(#"Filas en blanco eliminadas1",{"Column9", "Nro.", "Column6", "Incidencias registradas", "Categoría del envío", "Garante 160", "Column24", "Column25"}),
+				    #"Filas inferiores quitadas" = Table.RemoveLastN(#"Columnas quitadas2",1),
+				    #"Columnas quitadas3" = Table.RemoveColumns(#"Filas inferiores quitadas",{"Régimen", "Consignatario", "Agencia de Aduana", "Garantía 160°", "Column16", "Func. aduanero asignado", "Fecha/hora diligencia"})
+				in
+				    #"Columnas quitadas3"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,140 @@
+table Medidas
+	lineageTag: 626b4a61-a106-4500-b4d7-c873ab159945
+
+	measure 'Rojas por Asignar' = ```
+			CALCULATE(COUNT(NUMERADAS[Canal]),NUMERADAS[Canal]="R",NUMERADAS[Estado DUA]="17-RECEPCIONADO")
+				
+				
+			
+			```
+		formatString: 0
+		displayFolder: Pendientes
+		lineageTag: b1634c38-fa8c-477f-bf00-79f4b7002128
+
+	measure 'Naranjas por Asignar' = CALCULATE(COUNT(NUMERADAS[Canal]),NUMERADAS[Canal]="N",NUMERADAS[Estado DUA]="17-RECEPCIONADO")
+		formatString: 0
+		displayFolder: Pendientes
+		lineageTag: 74b758a4-0912-4b9d-808d-05bf20a714ed
+
+	measure 'Numeradas Naranja' = ```
+			
+			
+			 CALCULATE(Medidas[Total de Numeradas],filter('NUMERADAS',NUMERADAS[Canal]="N"))
+			
+			```
+		formatString: 0
+		displayFolder: Agregación
+		lineageTag: a7c2b71b-1f4f-4762-aa04-08fa5db2b483
+
+	measure 'Total de Numeradas' = ```
+			COUNTROWS('NUMERADAS')
+			
+			
+			```
+		formatString: 0
+		displayFolder: Agregación
+		lineageTag: 8f3fe287-3582-463b-8872-0749339ea3a3
+
+	measure %Naranja =
+			
+			var _total = [Total de Numeradas]
+			var _naranja = [Numeradas Naranja]
+			
+			return
+			
+			Divide(_naranja,_total,0)
+		lineageTag: 1fae89a0-f1b0-48f0-93d1-9c0bd55d3de5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Numeradas Roja' =
+			
+			calculate(Medidas[Total de Numeradas],
+			filter(NUMERADAS,NUMERADAS[Canal]="R"))
+		formatString: 0
+		displayFolder: Agregación
+		lineageTag: a06b3109-b187-41cb-b5f1-85bdb0706d28
+
+	measure %Roja = divide([Numeradas Roja],[Total de Numeradas],0)
+		lineageTag: 2de93cb1-a25e-42f6-b95f-739becb316f8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure %Verdes = 1-[%Naranja]-[%Roja]
+		lineageTag: 484dc1bd-461f-416b-9731-c97527060be6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Acumulado de Numeradas Mes' =
+			
+			calculate(
+			    [Total de Numeradas],
+			    DATESYTD('NUMERADAS'[Fecha Numeración].[Date]))
+		formatString: 0
+		displayFolder: Inteligencia de Tiempo
+		lineageTag: 2619c336-11d8-40f5-b8f3-43ae20d41bb4
+
+	measure 'Total de Asignadas' = COUNTROWS('ASIGNADAS')
+		formatString: 0
+		displayFolder: Agregación
+		lineageTag: 381cf616-7393-44b9-8dda-c87bf8222918
+
+	measure 'Asignadas Naranja' = ```
+			
+			
+			 CALCULATE(Medidas[Total de Asignadas],filter('ASIGNADAS',RELATED('NUMERADAS'[Canal])="N"))
+			```
+		formatString: 0
+		displayFolder: Agregación
+		lineageTag: 3f23d4fd-db85-43dd-b230-7d0088ff7eea
+
+	measure 'Asignadas Roja' = ```
+			
+			
+			 CALCULATE(Medidas[Total de Asignadas],filter('ASIGNADAS',RELATED('NUMERADAS'[Canal])="R"))
+			```
+		formatString: 0
+		displayFolder: Agregación
+		lineageTag: cdb9e752-6cc4-42fc-977c-6b52c0209967
+
+	measure 'Variación Asigandas' =
+			
+			var _mesanterior =
+			calculate([Total de Asignadas],dateadd('ASIGNADAS'[Fecha/hora asignación].[Date],-1,MONTH))
+			return
+			format(divide([Total de Asignadas]- _mesanterior, _mesanterior),"00.0%")
+		displayFolder: Variación
+		lineageTag: 636a22d5-0eea-47dd-a1ac-8e36c1e9dbba
+
+	measure 'Especialistas asignados por fecha' = DISTINCTCOUNTNOBLANK('ASIGNADAS'[Especialista])
+		formatString: 0
+		lineageTag: 24d468e3-afe3-40a9-a3dd-d1eceaa3608b
+
+	measure 'Restringida Total' = COUNTROWS('RESTRINGIDAS')
+		formatString: 0
+		lineageTag: dca98fef-9a78-4370-8d8d-adab642e43db
+
+	measure %Restringida =
+			
+			var _total = [Total de Numeradas]
+			var _restringidas = [Restringida Total]
+			
+			return
+			
+			Divide(_restringidas,_total,0)
+		lineageTag: 0d1a63ef-173d-4305-8062-c0f768da443f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+

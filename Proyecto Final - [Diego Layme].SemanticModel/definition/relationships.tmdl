@@ -1,0 +1,65 @@
+relationship 73cd9ef1-2e15-49a0-b439-a70ad8536b7c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: NUMERADAS.'Fecha Numeración'
+	toColumn: LocalDateTable_bbde4b50-fdf8-4b2b-bb19-b1d1c5447442.Date
+
+relationship 451421c9-2145-4798-b9da-2bc7f715e76b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: NUMERADAS.'Fecha Autorización Levante'
+	toColumn: LocalDateTable_baf2ed59-ac37-4e16-ac0d-71cb78c22d0a.Date
+
+relationship f476c922-c493-4bf3-8891-57c25b50496d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ASIGNADAS.'Fecha/hora asignación'
+	toColumn: LocalDateTable_e574e1ee-d1d3-4a1e-a600-d127ca89f25b.Date
+
+relationship af11caf8-b963-4768-8b18-8fa06d54e8e6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ASIGNADAS.'Fecha/hora Diligencia Despacho'
+	toColumn: LocalDateTable_51625674-6b11-4323-a3a8-4b2fc59bcdea.Date
+
+relationship eb4545c6-b7b3-fed2-4ef6-05f1f9e32ab7
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: NUMERADAS.'N° DUA'
+	toColumn: ASIGNADAS.'N° DUA'
+
+relationship 07b256cb-600f-4d7f-b471-5be9ee248d6a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'CAMBIO CANAL'.'Fecha Numeración'
+	toColumn: LocalDateTable_3b3d1b85-42df-48a2-b2b8-0db5f51a49b5.Date
+
+relationship AutoDetected_3f7849c5-b0a7-4347-baf0-a77fe58516cd
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'CAMBIO CANAL'.'N° DUA'
+	toColumn: NUMERADAS.'N° DUA'
+
+relationship dd7b0b06-2d35-42ef-88d4-85cc2b827519
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'DUDA RAZONABLE'.'Fecha de Diligencia Duda Razonable'
+	toColumn: LocalDateTable_61f72f15-0516-465e-8f91-cb41e9f96211.Date
+
+relationship AutoDetected_219a6da5-02d1-45b9-b4a9-e2e439d029dd
+	fromColumn: 'DUDA RAZONABLE'.'N° DUA'
+	toColumn: NUMERADAS.'N° DUA'
+
+relationship AutoDetected_95da7bc3-3b69-411d-bec5-1a26266490e9
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: RESTRINGIDAS.'N° DUA'
+	toColumn: NUMERADAS.'N° DUA'
+
+relationship AutoDetected_2cccb24d-6e2f-4629-8dbb-e59dc39b1e9f
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Partidas.'N° DUA'
+	toColumn: NUMERADAS.'N° DUA'
+
+relationship a7fa7c28-5e6d-c541-2819-cd2f06b8067c
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Registro.IMPORTADOR
+	toColumn: NUMERADAS.Consignatario
+

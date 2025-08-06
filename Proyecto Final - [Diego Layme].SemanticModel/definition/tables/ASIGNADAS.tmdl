@@ -1,0 +1,176 @@
+table ASIGNADAS
+	lineageTag: e3402047-fc0c-4ae6-bfd1-bf53b13018ea
+
+	column 'N° DUA'
+		dataType: string
+		lineageTag: c5d72cd4-e3ef-47d7-8ca2-678d130cdf9e
+		summarizeBy: none
+		sourceColumn: N° DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo asignación'
+		dataType: string
+		lineageTag: 10299e77-141e-4244-80a3-3d15b5ed3ad3
+		summarizeBy: none
+		sourceColumn: Tipo asignación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha/hora asignación'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 52d269b7-bea0-4cc9-b444-6ff45ea79c36
+		summarizeBy: none
+		sourceColumn: Fecha/hora asignación
+
+		variation Variación
+			isDefault
+			relationship: f476c922-c493-4bf3-8891-57c25b50496d
+			defaultHierarchy: LocalDateTable_e574e1ee-d1d3-4a1e-a600-d127ca89f25b.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Fecha/hora Diligencia Despacho'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ab989c30-81dc-480a-b0ed-f0420f03e2b8
+		summarizeBy: none
+		sourceColumn: Fecha/hora Diligencia Despacho
+
+		variation Variación
+			isDefault
+			relationship: af11caf8-b963-4768-8b18-8fa06d54e8e6
+			defaultHierarchy: LocalDateTable_51625674-6b11-4323-a3a8-4b2fc59bcdea.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Punto de Llegada'
+		dataType: string
+		lineageTag: 5dce6842-a780-4a77-9c8d-322dc17734d3
+		summarizeBy: none
+		sourceColumn: Punto de Llegada
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Minutos desde Asignación hasta Diligencia'
+		dataType: int64
+		formatString: 0
+		lineageTag: 12eb0714-1f6a-49c4-aac7-167e4f8da077
+		summarizeBy: sum
+		sourceColumn: Minutos desde Asignación hasta Diligencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Días en Despacho'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7437f2fa-4367-4b55-8fc7-55436509ed9f
+		summarizeBy: sum
+		sourceColumn: Días en Despacho
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Días desde la Numeración hasta la Asignación'
+		dataType: string
+		lineageTag: 118aebb7-19c1-42e5-bae6-3c00fa66a956
+		summarizeBy: none
+		sourceColumn: Días desde la Numeración hasta la Asignación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Días de la Numeración hasta la Diligencia'
+		dataType: int64
+		formatString: 0
+		lineageTag: 787d9459-4d33-4939-855d-ca7bf4457bf1
+		summarizeBy: sum
+		sourceColumn: Días de la Numeración hasta la Diligencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column Especialista
+		dataType: string
+		lineageTag: 92b00506-7584-455c-bdac-0cb73b393bff
+		summarizeBy: none
+		sourceColumn: Especialista
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Día de Asignación'
+		dataType: string
+		lineageTag: 25e3da0c-bd9b-4e00-95b8-f9cd518dfdd4
+		summarizeBy: none
+		sourceColumn: Día de Asignación
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latitud
+		dataType: double
+		lineageTag: 9f3b17dc-d4ad-4793-96e7-4d3d8200d258
+		summarizeBy: sum
+		sourceColumn: Latitud
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Longitud
+		dataType: double
+		lineageTag: b5c2913e-ed0e-490e-8742-7fc2cbf6d2fd
+		summarizeBy: sum
+		sourceColumn: Longitud
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition ASIGNADAS = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("D:\Usuarios\dlayme\OneDrive - SUNAT\DLAYME\PROYECTO FINAL PB\ASIGNADAS\2025-08-03_052446_ReporteGestion.xls"), null, true),
+				    report1 = Origen{[Name="report0"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(report1,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Column1", "Column2", "Column19", "Column18", "Column17"}),
+				    #"Filas superiores quitadas" = Table.Skip(#"Columnas quitadas",6),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Filas superiores quitadas", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"N° DUA", type text}, {"Fecha Numeración", type date}, {"Régimen", type text}, {"Canal", type text}, {"Modalidad", type text}, {"Estado DUA", type text}, {"Consignatario", type text}, {"Agencia de Aduana", type text}, {"Garantía 160°", type text}, {"Tipo asignación", type text}, {"Fecha/hora asignación", type text}, {"Funcionario aduanero", type text}, {"Fecha/hora Diligencia Despacho", type text}, {"Punto de Llegada", type text}}),
+				    #"Duplicados quitados" = Table.Distinct(#"Tipo cambiado1", {"N° DUA"}),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Duplicados quitados","-","",Replacer.ReplaceText,{"Fecha/hora Diligencia Despacho"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","-","",Replacer.ReplaceText,{"Fecha/hora asignación"}),
+				    #"Tipo cambiado2" = Table.TransformColumnTypes(#"Valor reemplazado1",{{"Fecha/hora asignación", type datetime}}),
+				    #"Tipo cambiado3" = Table.TransformColumnTypes(#"Tipo cambiado2",{{"Fecha/hora Diligencia Despacho", type datetime}}),
+				    #"Personalizada agregada" = Table.AddColumn(#"Tipo cambiado3", "Tiempo desde Asignación hasta Diligencia", each Duration.TotalMinutes([#"Fecha/hora Diligencia Despacho"]-[#"Fecha/hora asignación"])),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Personalizada agregada",{{"Tiempo desde Asignación hasta Diligencia", "Minutos desde Asignación hasta Diligencia"}}),
+				    #"Tipo cambiado4" = Table.TransformColumnTypes(#"Columnas con nombre cambiado",{{"Minutos desde Asignación hasta Diligencia", Int64.Type}, {"Fecha/hora Diligencia Despacho", type date}, {"Fecha/hora asignación", type date}}),
+				    asign_dilig = Table.AddColumn(#"Tipo cambiado4", "Días desde Asignación hasta Dilgiencia", each Duration.TotalDays([#"Fecha/hora Diligencia Despacho"]-[#"Fecha/hora asignación"])+1),
+				    #"Tipo cambiado5" = Table.TransformColumnTypes(asign_dilig,{{"Días desde Asignación hasta Dilgiencia", Int64.Type}}),
+				    Num_dilig = Table.AddColumn(#"Tipo cambiado5", "Días de la Numeración hasta la Diligencia", each Duration.TotalDays([#"Fecha/hora Diligencia Despacho"]-[Fecha Numeración])),
+				    #"Personalizada agregada3" = Table.AddColumn(Num_dilig, "Días desde la Numeración hasta la Asignación", each Duration.TotalDays([#"Fecha/hora asignación"]-[Fecha Numeración])),
+				    #"Columnas reordenadas" = Table.ReorderColumns(#"Personalizada agregada3",{"N° DUA", "Fecha Numeración", "Régimen", "Canal", "Modalidad", "Estado DUA", "Consignatario", "Agencia de Aduana", "Garantía 160°", "Tipo asignación", "Fecha/hora asignación", "Funcionario aduanero", "Fecha/hora Diligencia Despacho", "Punto de Llegada", "Minutos desde Asignación hasta Diligencia", "Días desde Asignación hasta Dilgiencia", "Días desde la Numeración hasta la Asignación", "Días de la Numeración hasta la Diligencia"}),
+				    #"Tipo cambiado6" = Table.TransformColumnTypes(#"Columnas reordenadas",{{"Días de la Numeración hasta la Diligencia", Int64.Type}}),
+				    #"Columnas con nombre cambiado1" = Table.RenameColumns(#"Tipo cambiado6",{{"Días desde Asignación hasta Dilgiencia", "Días en Despacho"}}),
+				    #"Errores quitados" = Table.RemoveRowsWithErrors(#"Columnas con nombre cambiado1", {"N° DUA"}),
+				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Errores quitados", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Rango de texto insertado" = Table.AddColumn(#"Filas en blanco eliminadas", "Rango de texto", each Text.Middle([Funcionario aduanero], 2, 5), type text),
+				    #"Columnas con nombre cambiado2" = Table.RenameColumns(#"Rango de texto insertado",{{"Rango de texto", "Especialista"}}),
+				    #"Columnas quitadas1" = Table.RemoveColumns(#"Columnas con nombre cambiado2",{"Funcionario aduanero", "Consignatario", "Agencia de Aduana", "Fecha Numeración", "Régimen", "Canal", "Modalidad", "Estado DUA", "Garantía 160°"}),
+				    #"Personalizada agregada1" = Table.AddColumn(#"Columnas quitadas1", "Día de Asignación", each Date.DayOfWeekName([#"Fecha/hora asignación"])),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Personalizada agregada1","DEPOSITO TEMPORAL - TERMINAL Y ALMACENES SUR S.A.","TASSA",Replacer.ReplaceText,{"Punto de Llegada"}),
+				    #"Valor reemplazado3" = Table.ReplaceValue(#"Valor reemplazado2","DEPOSITO TEMPORAL - ANDESGATE SOCIEDAD ANONIMA","ANDESGATE",Replacer.ReplaceText,{"Punto de Llegada"}),
+				    #"Valor reemplazado4" = Table.ReplaceValue(#"Valor reemplazado3","DEPOSITO TEMPORAL - AGERSA S.R.L.","AGERSA",Replacer.ReplaceText,{"Punto de Llegada"}),
+				    #"Columna condicional agregada" = Table.AddColumn(#"Valor reemplazado4", "Personalizado", each if [Punto de Llegada] = "TASSA" then "-16.5781468,-69.0551832" else if [Punto de Llegada] = "AGERSA" then "-16.5750007,-69.0491047" else "-16.5803035,-69.0449514"),
+				    #"Dividir columna por delimitador" = Table.SplitColumn(#"Columna condicional agregada", "Personalizado", Splitter.SplitTextByDelimiter(",", QuoteStyle.Csv), {"Personalizado.1", "Personalizado.2"}),
+				    #"Tipo cambiado7" = Table.TransformColumnTypes(#"Dividir columna por delimitador",{{"Personalizado.1", type number}, {"Personalizado.2", type number}}),
+				    #"Columnas con nombre cambiado3" = Table.RenameColumns(#"Tipo cambiado7",{{"Personalizado.1", "Latitud"}, {"Personalizado.2", "Longitud"}})
+				in
+				    #"Columnas con nombre cambiado3"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

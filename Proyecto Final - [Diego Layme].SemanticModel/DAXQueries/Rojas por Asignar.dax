@@ -1,0 +1,8 @@
+DEFINE
+    MEASURE 'Medidas'[Rojas por Asignar] = CALCULATE(COUNT(NUMERADAS[Canal]),NUMERADAS[Canal]="R",NUMERADAS[Estado DUA]="17-RECEPCIONADO")
+	
+	
+EVALUATE
+    SUMMARIZECOLUMNS(
+        "Rojas por Asignar", [Rojas por Asignar]
+    )

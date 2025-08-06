@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Proyecto Final - [Diego Layme]"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5f82c8ff-7810-4097-ba99-b6142282b7e7"
+  }
+}

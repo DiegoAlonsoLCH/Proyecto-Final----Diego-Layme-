@@ -1,0 +1,13 @@
+DEFINE
+    MEASURE 'Medidas'[Total de Numeradas] = COUNTROWS('NUMERADAS')
+	MEASURE 'Medidas'[Numeradas Naranja] = CALCULATE(Medidas[Total de Numeradas],filter('NUMERADAS',NUMERADAS[Canal]="N"))
+	measure 'medidas'[Numeradas Roja] = 
+calculate(Medidas[Total de Numeradas],
+filter(NUMERADAS,NUMERADAS[Canal]="R"))
+
+EVALUATE
+    SUMMARIZECOLUMNS(
+        "Total de Numeradas", [Total de Numeradas],
+		 "Numeradas Naranja", [Numeradas Naranja],
+		 "Numeradas Roja", [Numeradas Roja])
+    

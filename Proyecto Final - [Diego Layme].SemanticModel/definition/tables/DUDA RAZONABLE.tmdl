@@ -1,0 +1,120 @@
+table 'DUDA RAZONABLE'
+	lineageTag: 51c75431-d540-4d79-8d1e-8521ac3064b5
+
+	column 'N° DUA'
+		dataType: string
+		lineageTag: be48b8b8-67ff-4c82-b3ed-9326b22b2f91
+		summarizeBy: none
+		sourceColumn: N° DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Canal
+		dataType: string
+		lineageTag: 3b8bbcf3-94d5-433b-bced-24639c78899c
+		summarizeBy: none
+		sourceColumn: Canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado DUA'
+		dataType: string
+		lineageTag: 7068b5e9-b46b-48fb-9ae9-67dfd78abd3e
+		summarizeBy: none
+		sourceColumn: Estado DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Garantía 160°'
+		dataType: string
+		lineageTag: 4bba00f3-0205-4d89-8bb5-c7a899a79701
+		summarizeBy: none
+		sourceColumn: Garantía 160°
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fecha de Diligencia Duda Razonable'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c1c2475a-86af-430f-9333-949f8e19bc95
+		summarizeBy: none
+		sourceColumn: Fecha de Diligencia Duda Razonable
+
+		variation Variación
+			isDefault
+			relationship: dd7b0b06-2d35-42ef-88d4-85cc2b827519
+			defaultHierarchy: LocalDateTable_61f72f15-0516-465e-8f91-cb41e9f96211.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado de Duda Razonable'
+		dataType: string
+		lineageTag: 54f53ddb-50cb-4af8-85c7-d04b5fb5c215
+		summarizeBy: none
+		sourceColumn: Estado de Duda Razonable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Orden de Depósito'
+		dataType: string
+		lineageTag: d14de11d-0850-421d-9ee7-6d1d425534e5
+		summarizeBy: none
+		sourceColumn: Orden de Depósito
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Monto de Orden de Depósito'
+		dataType: int64
+		formatString: 0
+		lineageTag: 53402535-d0ea-4210-b1c3-a20ebc6efc78
+		summarizeBy: sum
+		sourceColumn: Monto de Orden de Depósito
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Orden de Devolución'
+		dataType: string
+		lineageTag: 88faf680-bf9a-4741-95fd-72122d596f03
+		summarizeBy: none
+		sourceColumn: Orden de Devolución
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'LC(s) Asociadas'
+		dataType: string
+		lineageTag: a4f6e1be-94ee-4c52-8cb8-0d5e02dc0065
+		summarizeBy: none
+		sourceColumn: LC(s) Asociadas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Estado de la LC'
+		dataType: string
+		lineageTag: ef771dd6-6e04-4d51-b5d1-2fe7f828756e
+		summarizeBy: none
+		sourceColumn: Estado de la LC
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'DUDA RAZONABLE' = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("D:\Usuarios\dlayme\OneDrive - SUNAT\DLAYME\PROYECTO FINAL PB\DUDAS RAZONABLES\2025-08-03_071141_ReporteGestion.xls"), null, true),
+				    report1 = Origen{[Name="report0"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(report1,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}, {"Column9", type text}, {"Column10", type text}, {"Column11", type text}, {"Column12", type text}, {"Column13", type text}, {"Column14", type text}, {"Column15", type text}, {"Column16", type text}, {"Column17", type text}, {"Column18", type text}, {"Column19", type text}, {"Column20", type text}, {"Column21", type text}, {"Column22", type text}, {"Column23", type text}, {"Column24", type text}}),
+				    #"Filas superiores quitadas" = Table.Skip(#"Tipo cambiado",6),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Filas superiores quitadas",{"Column1"}),
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Columnas quitadas", [PromoteAllScalars=true]),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Nro.", Int64.Type}, {"Column2", type text}, {"N° DUA", type text}, {"Fecha Numeración", type date}, {"Régimen", type text}, {"Column6", type text}, {"Canal", type text}, {"Modalidad", type text}, {"Estado DUA", type text}, {"Consignatario", type text}, {"Agencia de Aduana", type text}, {"Garantía 160°", type text}, {"Fecha de Diligencia Duda Razonable", type datetime}, {"Funcionario Registra Diligencia Duda Razonable", type text}, {"Estado de Duda Razonable", type text}, {"Orden de Depósito", type text}, {"Monto de Orden de Depósito", Int64.Type}, {"Orden de Devolución", type text}, {"LC(s) Asociadas", type text}, {"Estado de la LC", type text}, {"Categoría del envío", type text}, {"Garante 160", Int64.Type}, {"Column23", type text}}),
+				    #"Columnas quitadas1" = Table.RemoveColumns(#"Tipo cambiado1",{"Nro.", "Column2"}),
+				    #"Filas filtradas" = Table.SelectRows(#"Columnas quitadas1", each [#"N° DUA"] <> null and [#"N° DUA"] <> ""),
+				    #"Errores quitados" = Table.RemoveRowsWithErrors(#"Filas filtradas", {"N° DUA"}),
+				    #"Columnas quitadas2" = Table.RemoveColumns(#"Errores quitados",{"Modalidad", "Column6", "Régimen", "Fecha Numeración", "Consignatario", "Agencia de Aduana", "Categoría del envío", "Garante 160", "Column23", "Funcionario Registra Diligencia Duda Razonable"})
+				in
+				    #"Columnas quitadas2"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

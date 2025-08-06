@@ -1,0 +1,32 @@
+table Partidas
+	lineageTag: 888cd617-783b-4022-bf7c-df74e5190b3a
+
+	column 'N° DUA'
+		dataType: string
+		lineageTag: 65db74ff-6059-4d8c-8ca1-8921e048146e
+		summarizeBy: none
+		sourceColumn: N° DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Partida
+		dataType: string
+		lineageTag: f5ca1e5f-ce9d-4391-844a-85ef5e6030a0
+		summarizeBy: none
+		sourceColumn: Partida
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Partidas = m
+		mode: import
+		source =
+				let
+				    Origen = Table.Combine({HARINA, #"TORTA DE SOYA"}),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Partida", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,88 @@
+table Registro
+	lineageTag: 04ed6cf4-6cff-4584-b24d-101cb79aaa1a
+
+	column DAM
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a17d9ee-1feb-41af-b893-8065718495f2
+		summarizeBy: sum
+		sourceColumn: DAM
+
+		annotation SummarizationSetBy = Automatic
+
+	column DT
+		dataType: string
+		lineageTag: 49aca519-8c40-4b23-851d-bdad2d7c22fc
+		summarizeBy: none
+		sourceColumn: DT
+
+		annotation SummarizationSetBy = Automatic
+
+	column ATENCION
+		dataType: string
+		lineageTag: aeca5c40-051a-4380-8d52-c30cd5bb0286
+		summarizeBy: none
+		sourceColumn: ATENCION
+
+		annotation SummarizationSetBy = Automatic
+
+	column DECLARANTE
+		dataType: string
+		lineageTag: 7b0f8c79-1be1-493f-854e-110a4fd6e537
+		summarizeBy: none
+		sourceColumn: DECLARANTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROV
+		dataType: string
+		lineageTag: 37ef84e3-7254-4307-9757-765ede906d8a
+		summarizeBy: none
+		sourceColumn: PROV
+
+		annotation SummarizationSetBy = Automatic
+
+	column SUBPARTIDA
+		dataType: string
+		lineageTag: b7285c86-6145-4fac-a94c-06b010c3da95
+		summarizeBy: none
+		sourceColumn: SUBPARTIDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESCRIP
+		dataType: string
+		lineageTag: 8d15c961-dc73-47a7-82b7-9c4ca25478e2
+		summarizeBy: none
+		sourceColumn: DESCRIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column IMPORTADOR
+		dataType: string
+		lineageTag: 9991ea04-3c7a-46a6-a52c-b73cf39699ad
+		summarizeBy: none
+		sourceColumn: IMPORTADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Registro = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("D:\Usuarios\dlayme\OneDrive - SUNAT\DLAYME\PROYECTO FINAL PB\REGISTRO\Registro 2025-1.xlsx"), null, true),
+				    Registro_Table = Origen{[Item="Registro",Kind="Table"]}[Data],
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Registro_Table,{{"DAM", Int64.Type}, {"MANIFIESTO", Int64.Type}, {"CRT", type any}, {"FACTURA", type any}, {"FECHA FACT", type date}, {"IMP", type text}, {"RUC", Int64.Type}, {"DT", type text}, {"ATENCION", type text}, {"DECLARANTE", type text}, {"PROV", type text}, {"Llegada D", type date}, {"Llegada R", type date}, {"PAGO", type any}, {"FOB", type number}, {"FLETE", type number}, {"SEGURO", type number}, {"FOB cal", type number}, {"Flete dc", type number}, {"Segur dc", type number}, {"P BRUTO D", type number}, {"P BRUTO R", type number}, {"BULTOS", type any}, {"5%", type any}, {"U COM", type number}, {"SERIE", Int64.Type}, {"SUBPARTIDA", Int64.Type}, {"FOB Un", type number}, {"Referencia", type number}, {"NIVEL COM", type text}, {"DAM ref", type any}, {"FECHA REF", type date}, {"Serie ref", type any}, {"T.DIF", type number}, {"TRIB", type any}, {"DESCRIP", type text}, {"ENTE COMPETENTE", type text}, {"DOC CONTROL", type any}, {"FECHA DC", type any}, {"PFS", type any}, {"FECHA", type date}, {"DILIGENCIA", type text}, {"FECHA NOTIFICACION DR", type any}, {"LIMITE DR", type any}, {"VENCIMIENTO FACTURA", type date}, {"FECHA ASIGNADO", type any}, {"FECHA DILIGENCIA", type any}, {"TIEMPO", type text}, {"CANAL", type text}, {"REVISION DR", type text}, {"FECHA NOTIFICACION IDV", type any}, {"LIM", type date}, {"ESTADO", type any}, {"LAT (Y)", type any}, {"LONG(X)", type any}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Llegada D", "Llegada R", "PAGO", "FOB", "FLETE", "SEGURO", "FOB cal", "Flete dc", "Segur dc", "P BRUTO D", "P BRUTO R", "BULTOS", "5%", "U COM", "SERIE", "FOB Un", "Referencia", "NIVEL COM", "DAM ref", "FECHA REF", "Serie ref", "T.DIF", "TRIB", "ENTE COMPETENTE", "DOC CONTROL", "FECHA DC", "PFS", "FECHA", "DILIGENCIA", "FECHA NOTIFICACION DR", "LIMITE DR", "VENCIMIENTO FACTURA", "FECHA ASIGNADO", "FECHA DILIGENCIA", "TIEMPO", "CANAL", "REVISION DR", "FECHA NOTIFICACION IDV", "LIM", "ESTADO", "LAT (Y)", "LONG(X)", "MANIFIESTO", "CRT", "FACTURA", "FECHA FACT", "IMP"}),
+				    #"Últimos caracteres insertados" = Table.AddColumn(#"Columnas quitadas", "Últimos caracteres", each Text.End(Text.From([RUC], "es-PE"), 6), type text),
+				    #"Prefijo insertado" = Table.AddColumn(#"Últimos caracteres insertados", "Prefijo", each "IMP-" & [Últimos caracteres], type text),
+				    #"Columnas quitadas1" = Table.RemoveColumns(#"Prefijo insertado",{"RUC", "Últimos caracteres"}),
+				    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Columnas quitadas1",{{"Prefijo", "IMPORTADOR"}}),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Columnas con nombre cambiado",{{"SUBPARTIDA", type text}})
+				in
+				    #"Tipo cambiado1"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+
